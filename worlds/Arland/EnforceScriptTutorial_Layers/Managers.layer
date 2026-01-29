@@ -23,43 +23,34 @@ SCR_AIWorld SCR_AIWorld : "{E0A05C76552E7F58}Prefabs/AI/SCR_AIWorld.et" {
   }
  }
  coords 1891.659 11.438 1822.161
- {
-  CommentEntity {
-   coords 0 1 0
-   m_Comment "SCR_AIWorld: "\
-   "Configure navigation mesh"
-   m_Color 0 0 0
-   m_FaceCamera 1
-   m_TextBackground 1
-   m_BackgroundColor 1 0.6 0
-   m_BackgroundTransparency 0
-  }
- }
 }
-SCR_BaseGameMode GameMode_Deathmatch_Selection1 : "{23B931640D22C50A}Prefabs/MP/Modes/Deathmatch/GameMode_Deathmatch_Selection.et" {
+PerceptionManager PerceptionManager : "{028DAEAD63E056BE}Prefabs/World/Game/PerceptionManager.et" {
+ coords 2048 39.438 2048
+}
+SCR_FactionManager FactionManager_USxUSSR : "{589540B35EBA8CDC}Prefabs/MP/Managers/Factions/FactionManager_USxUSSR.et" {
+ coords 2048 39.437 2048
+}
+RadioManagerEntity RadioManager : "{B8E09FAB91C4ECCD}Prefabs/Systems/Radio/RadioManager.et" {
+ coords 2048 39.437 2048
+}
+SCR_BaseGameMode GameModeSF1 : "{ECEEDB2D3737204B}Prefabs/Systems/ScenarioFramework/GameModeSF.et" {
  components {
-  SCR_RespawnSystemComponent "{56B2B4793051E7C9}" {
-   m_SpawnLogic SCR_AutoSpawnLogic "{5D38D0BFF5080D6F}" {
-   }
+  BHS_TimeAndWeatherHandlerComponent "{68771AF4BE723077}" {
+   m_bDateOverride 1
+   m_iDay 23
+   m_iMonth 7
+   m_iYear 2026
+  }
+  SCR_WelcomeScreenComponent "{687B1427FA2357E0}" {
+  }
+  SCR_XPHandlerComponent "{6876E2254D64A8C7}" {
   }
  }
- coords 2047.891 39.37 2047.822
- {
-  PerceptionManager PerceptionManager1 : "{028DAEAD63E056BE}Prefabs/World/Game/PerceptionManager.et" {
-   coords 0.011 0.012 0.039
-  }
-  SCR_FactionManager FactionManager_FFA1 : "{A1C54BBE72C5C696}Prefabs/MP/Managers/Factions/FactionManager_FFA.et" {
-   coords 0.109 0.068 0.178
-   m_bCanChangeFactionsPlayable 0
-  }
-  RadioManagerEntity : "{B8E09FAB91C4ECCD}Prefabs/Systems/Radio/RadioManager.et" {
-   coords 0.004 0.012 0.045
-  }
-  ScriptedChatEntity : "{F69BC912AC8236F9}Prefabs/MP/ScriptedChatEntity.et" {
-   coords 0.14 0.08 0.203
-  }
-  SCR_LoadoutManager : "{B7E5D7F4864D81C0}Prefabs/MP/Managers/Loadouts/LoadoutManager_FFA.et" {
-   coords 0.109 0.068 0.178
-  }
- }
+ coords 2048 39.437 2048
+}
+ScriptedChatEntity ScriptedChatEntity : "{F69BC912AC8236F9}Prefabs/MP/ScriptedChatEntity.et" {
+ coords 2048 39.437 2048
+}
+SCR_LoadoutManager LoadoutManager_USxUSSR : "{97EF4C1A41F63DDB}Prefabs/MP/Managers/Loadouts/LoadoutManager_USxUSSR.et" {
+ coords 2048 39.438 2048
 }

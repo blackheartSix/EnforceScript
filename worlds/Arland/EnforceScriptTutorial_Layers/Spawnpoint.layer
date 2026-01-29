@@ -1,3 +1,7 @@
-SCR_SpawnPoint : "{5392C4D80E4B18F8}Prefabs/MP/Spawning/SpawnPoint_FFA.et" {
- coords 2048 39.438 2048
+SCR_SpawnPoint : "{5A2220DD0C16958B}Prefabs/MP/Spawning/SpawnPoint_US.et" {
+ components {
+  BHS_TeleportFieldComponent "{687B142D13621049}" {
+  }
+ }
+ coords 2043.373 58.983 2139.606
 }
